@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link rel="icon" type="image/png" href="assets/logo/yesh.png" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Adenike's Portfolio</title>
+  </head>
+  <body>
+    <div class="hero-container container">
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">
+            <h3 class="d-none d-md-flex">
+              <span><> </span>Adenike's Portfolio
+            </h3>
+            <h3 class="d-md-none"><span><> </span>My Portfolio</h3>
+          </a>
+          <button
+            class="navbar-toggler shadow-none border-0"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-start"
+            style="height: 400px"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                Adenike's Portfolio
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body d-flex align-items-center">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#tech-stack">Stack</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container">
+        <div class="row hero-content d-md-flex">
+          <div class="col-md-6 d-flex align-items-center">
+            <div class="hero-text">
+              <span class="badge rounded-pill text-bg-light"
+                >Available for hire</span
+              >
+              <h1>Hi, I'm <span>Adenike</span><br />Frontend Developer</h1>
+              <p>I build exceptional mobile-friendly web designs</p>
+              <button
+                class="btn me-3 btn-1"
+                onclick="window.open('assets/resume.pdf')"
+              >
+                Download CV
+              </button>
+              <a class="btn btn-2 text-decoration-none" href="#contact"
+                >Contact Info</a
+              >
+              <span class="d-flex mt-3 mb-2">
+                <a
+                  target="_blank"
+                  class="text-decoration-none text-black m-0 p-0"
+                  onclick="location.href='https://github.com/Adenikemi'"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="25"
+                    fill="currentColor"
+                    class="bi bi-github me-3"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+                    />
+                  </svg>
+                </a>
+                <a
+                  target="_blank"
+                  class="text-decoration-none text-black m-0 p-0"
+                  onclick="location.href='https://www.linkedin.com/in/adenikeawolalu/'"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="25"
+                    fill="currentColor"
+                    class="bi bi-linkedin"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
+                    />
+                  </svg>
+                </a>
+              </span>
+            </div>
+          </div>
+          <div class="col-md-6 d-none d-md-flex justify-content-center">
+            <div class="hero-img mb-5">
+              <img src="assets/images/hello.jpg" alt="Hello Image" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="know-me-section" id="about">
+      <div class="know-me">
+        <p class="text-center know-me-p">Get to know more</p>
+        <h2 class="text-center">About me</h2>
+        <div class="section-container">
+          <div class="section-pic-container">
+            <img
+              src="assets/images/nike.jpg"
+              alt="My profile picture"
+              class="about-pic"
+            />
+          </div>
+          <div class="about-details-container">
+            <div class="about-containers row">
+              <div class="details-container col-6">
+                <img
+                  src="assets/logo/experience.png"
+                  alt="Experience Icon"
+                  class="icon"
+                />
+                <h3>Experience</h3>
+                <p>2 year <br />Software Engineering Experience</p>
+              </div>
+              <div class="details-container col-6">
+                <img
+                  src="assets/logo/education.png"
+                  alt="Education Icon"
+                  class="icon"
+                />
+                <h3>Education</h3>
+                <p>Bsc Bachelors Degree <br />Management Information System</p>
+              </div>
+            </div>
+            <div class="text-container">
+              <p class="mb-0">
+                I studied Management Information System at Covenant University
+                and graduated with a first class degree in the year 2023. Did
+                DevOps alongside full stack development during SIWES. Currently
+                working as a Frontend Engineer at Remita Payment Services
+                Limited.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="experience-section" id="projects">
+      <div class="container mt-5 pt-2 mb-5 pb-3">
+        <h2 class="text-center">My Projects</h2>
+        <p class="text-center">
+          A selection of my recent work. I've built these projects using
+          Angular, Bootstrap, Wordpress and various other technologies.
+        </p>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card shadow-sm">
+              <div class="card-header-gradient gradient-purple"></div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  Ideal Social Care
+                  <span class="status-badge status-live">Live</span>
+                </h5>
+                <p class="text-muted">
+                  A social care website for children in the UK. Built with Html,
+                  Bootstrap, SCSS, and Javascript.
+                </p>
+                <div class="mb-3">
+                  <span class="badge badge-tech">Html</span>
+                  <span class="badge badge-tech">Bootstrap</span>
+                  <span class="badge badge-tech">SCSS</span>
+                  <span class="badge badge-tech">Javascript</span>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <a
+                    target="_blank"
+                    href="#"
+                    class="btn btn-outline-dark btn-sm"
+                    onclick="location.href='https://github.com/Adenikemi/IdealCare'"
+                    >Code</a
+                  >
+                  <a
+                    target="_blank"
+                    href="#"
+                    class="btn btn-dark btn-sm"
+                    onclick="location.href='https://idealsocialcare.co.uk'"
+                    >Live Demo</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow-sm">
+              <div class="card-header-gradient gradient-blue"></div>
+              <div class="card-body d-flex flex-column justify-content-between">
+                <h5 class="card-title">
+                  Eagles Care
+                  <span class="status-badge status-live">Live</span>
+                </h5>
+                <p class="text-muted">
+                  A social care website for children in Canada. Built with
+                  wordpress
+                </p>
+                <div class="mb-3">
+                  <span class="badge badge-tech">Wordpress</span>
+                </div>
+                <a
+                  target="_blank"
+                  href="#"
+                  class="btn btn-dark btn-sm"
+                  onclick="location.href='eaglescare.ca'"
+                  >Live Demo</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow-sm">
+              <div class="card-header-gradient gradient-orange"></div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  Zion Quality Care
+                  <span class="status-badge status-soon">Coming Soon</span>
+                </h5>
+                <p class="text-muted">
+                  A social care website for children in Canada. Built with
+                  Angular, Bootstrap, Typescript, and SCSS.
+                </p>
+                <div class="mb-3">
+                  <span class="badge badge-tech">Angular</span>
+                  <span class="badge badge-tech">Bootstrap</span>
+                  <span class="badge badge-tech">TypeScript</span>
+                  <span class="badge badge-tech">SCSS</span>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <a
+                    target="_blank"
+                    class="btn btn-outline-dark btn-sm"
+                    onclick="location.href='https://github.com/Adenikemi/zionscare'"
+                    >Code</a
+                  >
+                  <a
+                    target="_blank"
+                    class="btn btn-dark btn-sm"
+                    onclick="location.href='https://zionscare.vercel.app'"
+                    >Demo</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="tech-stack-section" id="tech-stack">
+      <div class="container mt-5 pt-5 pb-5">
+        <h2 class="text-center pb-4">My Tech Stack</h2>
+        <div class="row d-md-flex flex-md-row">
+          <div class="col-3 col-md-2 icons">
+            <div class="d-flex justify-content-center">
+              <img src="assets/logo/angular.png" alt="Angular" />
+            </div>
+            <p class="text-center pt-3">Angular</p>
+          </div>
+          <div class="col-3 col-md-2 icons">
+            <div class="d-flex justify-content-center">
+              <img src="assets/logo/typescript.png" alt="Typescript" />
+            </div>
+            <p class="text-center pt-3">TypeScript</p>
+          </div>
+          <div class="col-3 col-md-2 icons">
+            <div class="d-flex justify-content-center">
+              <img src="assets/logo/javascript.png" alt="Javascript" />
+            </div>
+            <p class="text-center pt-3">JavaScript</p>
+          </div>
+          <div class="col-3 col-md-2 icons">
+            <div class="d-flex justify-content-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-bootstrap"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M5.062 12h3.475c1.804 0 2.888-.908 2.888-2.396 0-1.102-.761-1.916-1.904-2.034v-.1c.832-.14 1.482-.93 1.482-1.816 0-1.3-.955-2.11-2.542-2.11H5.062zm1.313-4.875V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23zm0 3.762V8.162h1.822c1.236 0 1.887.463 1.887 1.348 0 .896-.627 1.377-1.811 1.377z"
+                />
+                <path
+                  d="M0 4a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4zm4-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3z"
+                />
+              </svg>
+            </div>
+            <p class="text-center pt-3">Bootstrap</p>
+          </div>
+          <div class="col-3 col-md-2 icons">
+            <div class="d-flex justify-content-center">
+              <img src="assets/logo/scss.png" alt="SCSS" />
+            </div>
+            <p class="text-center pt-3">SCSS</p>
+          </div>
+          <div class="col-3 col-md-2 icons">
+            <div class="d-flex justify-content-center">
+              <img src="assets/logo/wordpress.png" alt="Wordpress" />
+            </div>
+            <p class="text-center pt-3">WordPress</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact-section pt-5" id="contact">
+      <div class="container">
+        <h2 class="text-center pb-5">Contact Details</h2>
+        <div class="row">
+          <div class="text-container col-md-6">
+            <h3>Let's work together</h3>
+            <p>
+              I'm currently available for freelance work and full-time
+              positions. If you're interested in working together, please reach
+              out!
+            </p>
+          </div>
+          <div class="pic-container col-md-6">
+            <div class="contact-info-container">
+              <img
+                src="assets/logo/email.png"
+                alt="Email Icon"
+                class="contact-icon"
+              />
+              <p>
+                <a href="mailto:adenikeawolalu@gmail.com"
+                  >adenikeawolalu@gmail.com</a
+                >
+              </p>
+            </div>
+            <div class="contact-info-container">
+              <img
+                src="assets/logo/linkedin.png"
+                alt="linkedin Icon"
+                class="contact-icon"
+              />
+              <p>
+                <a target="_blank" href="https://linkedin.com/in/adenikeawolalu"
+                  >LinkedIn Profile</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="text-center pt-5">
+      <p>Copyright&#169; 2025 Adenike Awolalu. All rights reserved</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
